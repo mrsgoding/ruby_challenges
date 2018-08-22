@@ -2,17 +2,16 @@ puts "When is your birthdate? Use MMDDYYYY format, please."
 birthdate = gets
 number = birthdate[0].to_i + birthdate[1].to_i + birthdate[2].to_i + birthdate[3].to_i + birthdate[4].to_i + birthdate[5].to_i + birthdate[6].to_i + birthdate[7].to_i
 puts number
-number_1 = number.to_s
-number_2 = number_1[0].to_i + number_1[1].to_i
-puts number_2
-if (number_2 > 9) then
-  number_3 = number_2.to_s
-  number_4 = number_3[0].to_i + number_3[1].to_i
-  puts number_4
-else puts number_2
+number = number.to_s
+number = number[0].to_i + number[1].to_i
+puts number
+if (number > 9) then
+  number = number.to_s
+  number = number[0].to_i + number[1].to_i
 end
+puts number
 
-birth_path_number = number_4.to_s && number_2.to_s
+birth_path_number = number.to_s
 case birth_path_number
 when "1" then puts "One is the leader. The number one indicates the ability to stand alone and is a strong vibration. Ruled by the Sun."
 when "2" then puts "This is the mediator and peace-lover. The number two indicates the desire for harmony. It is a gentle, considerate, and sensitive vibration. Ruled by the Moon."

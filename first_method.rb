@@ -1,0 +1,6 @@
+def first_method(num1, num2)
+  number = num1 + num2
+  puts number
+end
+
+first_method(50, 60)
